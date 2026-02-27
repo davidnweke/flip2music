@@ -1,0 +1,129 @@
+body {
+    background-color: #dcd4e2;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* margin-right: 30px; */
+}
+
+::selection {
+    background-color: #030000;
+    color: white;
+}
+.wrapper {
+    background: url(../assets/hero-pattern.jpg);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -150px;
+    position: sticky;
+    top: 0 ;
+    z-index: 1000;
+    }
+
+.logo {
+    /* margin-left: 10px; */
+}
+
+ul {
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+    color: #030000;
+}
+.dropdown-container {
+    position: relative;
+}
+.dropdown-button {
+    background-color: #030000;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    left: 0;
+    background-color: #030000;
+    border-radius: 0 0 20px 20px;
+    
+}
+
+.dropdown a {
+    display: block;
+    padding: 12px 35px;
+    color: white;
+    margin: 5px 0;
+}
+
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+
+.about, .contact {
+    background-color: #e8e5ea;
+    color: #030000;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+.hero-text {
+    font-size: 6.5rem;
+    font-weight: 900;
+    /* margin-bottom: 10px; */
+}
+.hero-image:hover {
+    transform: scale(105%);
+    transform: rotate(10deg);
+}
+
+.beat {
+    color: indigo;
+}
+.category {
+    text-align: center;
+    margin-top: 5px;
+}
+.category-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    font-size: 1.5rem;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.card img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+.card img:hover {
+    transform: scale(105%);
+    /* transition: transform 0.3s ease; */
+}
