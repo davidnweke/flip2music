@@ -11,7 +11,7 @@
 <body>
     <div class="wrapper">
         <nav>
-            <img class="logo" src="../assets/flip2music-logo.png" alt="logo" width="10%">
+            <img class="logo" src="../assets/flip2music-logo.png" alt="logo" width="100">
             <ul>
                 <div class="dropdown-container"> 
                     <a href="" class="dropdown-button">Categories</a>
@@ -28,9 +28,12 @@
             </ul>
         </nav>
         <div class="hero">
-            <p class="hero-text">Feel the <span class="beat">beat</span>
+            <p class="hero-text">
+                <span id="time"></span> <br>
+                Feel the <span class="beat">beat</span>
                  <br> 
-                 <span>Feel the pulse</span></p>
+                <span>Feel the pulse</span>
+            </p>
             <img class="hero-image" src="../assets/headset.png" alt="" width="500">
         </div>
     </div>
@@ -55,5 +58,154 @@
             </a>
         </div>
     </div>
+    <footer>
+        All rights reserved &copy; 2024 Flip2Music
+    </footer>
+    <script>
+        // javascript function for time
+        // const time = new Date().toLocaleTimeString();
+
+        // Inserting the time inside the html
+        // document.getElementById('time').textContent = time;
+
+        // function updateTime() {
+        //     const timeElement = document.getElementById('time');
+        //     const now = new Date();
+        //     const hours = now.getHours().toString().padStart(2, '0');
+        //     const minutes = now.getMinutes().toString().padStart(2, '0');
+        //     const seconds = now.getSeconds().toString().padStart(2, '0');
+        //     const period = hours >= 12 ? 'PM' : 'AM'; 
+        //     timeElement.textContent = `${hours}:${minutes}:${seconds} ${period}`;
+        // }
+        // setInterval(updateTime, 1000);
+        // updateTime(); // Initial call to display time immediately
+
+        // const value = updateTime();
+        // CHECKING DATA TYPES IN JAVASCRIPT
+        // let name = "Cyril";
+        // let age = 30;
+        // let isStudent = true;
+        // let phoneNumber = null;
+        // let address = undefined;
+
+        // Array
+        // let numberOfStudents = [2, "phone2", "phone3", "phone4", "phone5", 2000];
+
+        // Object 
+        // let nameValue = {
+        //     name: "Cyril",
+        //     age: 30,
+        //     city: "Ogun State"
+        // }
+
+        // CHECKING DATA TYPES IN JAVASCRIPT
+        // const data = typeof nameValue;
+        
+        //getting a particular element from the array
+        // let newArray = numberOfStudents[5];
+        // let newObject = nameValue.age;
+
+        // const number = "phone6";
+
+        // const firstName = "Cyril";
+        // const lastName = "Ogunleye";
+
+        // jOINING STRINGS IN JAVASCRIPT USING PLUS SIGN
+        // const fullName = firstName + " " + lastName + " " + "Badmus"; 
+
+        // TEMPLATE LITERALS (using backticks and ${} to embed expressions in a string)
+        // const fullName = `${firstName} ${lastName} Badmus}`;
+        
+        // JAVASCRIPT METHODS: CHARACTER AT (getting a particular character from a string)
+        // const newName = firstName.charAt(3)
+
+        // JAVASCRIPT METHODS: CONCAT (joining two or more strings together)
+        // const newName = firstName.concat(" ", lastName, " ", "Badmus");
+
+        // JAVASCRIPT METHODS: INCLUDES (checking if a string contains a particular substring)
+        // const food1 = `delish sharwama`
+        // const food2 = "exclusive sharwama"
+        // const food3 = 'Vanilla icecream'
+
+        // const containFood = food3.includes("biscuit")
+
+        // JAVASCRIPT METHODS: STARTSWITH (checking if a string starts with a particular substring)
+        // const food1 = `delish sharwama is the best food in the world`
+        // const food2 = "exclusive sharwama"
+        // const food3 = 'vanilla icecream'
+
+        // const containFood = food3.startsWith("vanilla")
+
+        // JAVASCRIPT METHODS: ENDSWITH (checking if a string ends with a particular substring)
+        // const food1 = `delish sharwama is the best food in the world`
+        // const food2 = "exclusive sharwama is the best food in the world"
+        // const food3 = 'vanilla icecream'
+
+        // const containFood = food3.endsWith("cream")
+
+        // JAVASCRIPT METHODS: INDEXOF (getting the index of the first occurrence of a particular substring in a string)
+        // const item = "delish sharwama is the best food in the world"
+
+        // const whatIndex = item.indexOf("is")
+
+        // JAVASCRIPT METHODS: LASTINDEXOF (getting the index of the last occurrence of a particular substring in a string)
+        // const item = "delish-in sharwama is the best food in the world in"
+
+        // const whatIndex = item.lastIndexOf("in")
+
+
+        // JAVASCRIPT METHODS: UPPERCASE (converting a string to uppercase)
+        // const item = "delish-in sharwama is the best food in the world in"
+
+        // const value = item.toUpperCase();
+
+
+        // JAVASCRIPT METHODS: LOWERCASE (converting a string to lowercase)
+        // const item = "delish-in Sharwama is the BEST food in the WORLD"
+
+        // const value = item.toLowerCase();
+
+
+        // JAVASCRIPT METHODS: TRIM (removing whitespace from both ends of a string)
+        // const name = `Cyril Ogunleye               Badmus`;
+
+        // const value = name.trim(); // removing whitespace from both ends of the string
+        // const value = name.trimStart(); // removing whitespace from the start of the string
+        // const value = name.trimEnd(); // removing whitespace from the end of the string
+
+        // JAVASCRIPT METHODS: SCLICE (extracting a section of a string and returning it as a new string) 
+        // const title = "The man with the heart of stone";
+        // const money = title.slice(-5);
+
+        //jAVASCRIPT METHODS: SUBSTRING (extracting a section of a string and returning it as a new string)
+        // const title = "The man with the heart of stone";
+        // const value = title.substring(4, 7);
+
+        //JAVASCRIPT METHODS: SPLITING STRINGS INTO AN ARRAY (splitting a string into an array of substrings based on a specified separator)
+        // const title = "The man with the heart of stone";
+        // const value = title.split(" ")
+
+        //JAVASCRIPT METHODS: SPLITTING BY CHARACTER (splitting a string into an array of substrings based on a specified character)
+        // const data = "9/3/2026";
+        // const array = data.split("/");
+
+        // JAVASCRIPT METHODS: SPLITTING A WORD INTO AN ARRAY OF CHARACTERS (splitting a string into an array of individual characters)
+        // const word = "Flip2Music";
+        // const value = word.split("");
+
+        // JAVASCRIPT METHODS: REPLACE (replacing a specified value with another value in a string)
+        // const name = "Cyril Ogunleye Badmus";
+        // const value = name.replace("Cyril Ogunleye Badmus", "Robert Mustapha Obong");
+
+        //JAVASCRIPT METHODS: REPLACEALL (replacing all occurrences of a specified value with another value in a string)
+        // const title = "The man with the heart of stone met the man of God yesterday with the man";
+        // const value = title.replaceAll("man", "woman");
+
+        
+
+
+        document.getElementById('time').textContent = value;
+    </script>
+    
 </body>
 </html>
