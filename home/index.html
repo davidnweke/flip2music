@@ -373,14 +373,45 @@
         // const repayment = `Your interest rate is: N${interest} and you will repay back: N${interest + prinicipal}`
 
 
-        const oldValue = 52
-        const newValue = 13
+        // const oldValue = 52
+        // const newValue = 13
 
-        const change = (newValue - oldValue) * 100 / oldValue
+        // const change = (newValue - oldValue) * 100 / oldValue
 
-        const newchange = `Nigeria's economy decreased by ${Math.abs(change)}% between 2014 to 2026`
+        // const newchange = `Nigeria's economy decreased by ${Math.abs(change)}% between 2014 to 2026`
+
+        
+        
+        // Ternary operator
+
+        // const value = prompt("How old are you?")
+
+        // const eligibility = (value >= 18) ? "You are allowed to visit the website" : "You are not allowed to visit"
+
+        const nationality = prompt("What country are you from?")
+
+        const age = prompt("How old are you?")
+
+        const retirementYear = prompt("When did you retire?")
+
+        const name = prompt("WHat is your name?")
+
+
+        const pension = (nationality === "Nigeria" && age >= 60 && retirementYear >= 2020) ?
+                            `Hello ${name}, You are due for pension and your rate is N100,000` :
+                        (nationality === "Nigeria" && age < 60 && retirementYear < 2020) ?
+                            `Hello ${name}, You are a Nigerian, but you are not due for pension` :
+                        (nationality !== "Nigeria" && age >= 60 && retirementYear >= 2020 ) ?
+                            `Hello ${name}, You are not a Nigerian but you have retired` :
+                            `Hello ${name}, You are not due for pension`
+
+                        // (age >= 60 && age < 70)
+
+
+
          
-        document.getElementById('time').textContent = newchange;
+        document.getElementById('time').textContent = pension;
+        // https://slidesdocs.com/spreadsheet/excel-for-learning-test-results-template_8d5b0d6c8f
     </script>
     
 </body>
