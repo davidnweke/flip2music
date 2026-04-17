@@ -1,0 +1,36 @@
+table {
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #030000;
+}
+
+
+th, td { 
+    text-align: left;
+    padding-left: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: blueviolet;
+}
+th {
+    background-color: #030000;
+    color: white;
+    padding: 10px 20px;
+}
+/* tr:nth-child(odd) {
+    background-color: gray;
+    padding: 10px 20px;
+    color: #030000
+}
+tr:nth-child(even) {
+    padding: 10px 20px;
+    color: black
+} */

@@ -139,7 +139,7 @@
         // JAVASCRIPT STRING METHODS: CHECKING LENGTH
         // const name = "Cyril Etim";
         // const checkLength = name.length
-
+ 
         //JAVASCRIPT STRING METHODS: REPLACEALL (replacing all occurrences of a specified value with another value in a string)
         // const title = "The man with the heart of stone met the man of God yesterday with the man";
         // const value = title.replaceAll("man", "woman");
@@ -384,18 +384,18 @@
 
         // const value4 = Knife ()
 
-        const jumia = {
+        // const jumia = {
 
-            title: "Singleton Single Malt Scotch Whisky 15 Years Old Fruit Decadence 700ml",
-            image: "https://images.unsplash.com/photo-1641935955033-9802fb38aff2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            price: 120983,
-            productDetails: "Singleton 15 Years Old - Fruit Decadence is a premium single malt Scotch whisky that embodies the perfect balance of rich flavors and exquisite craftsmanship",
-            quality: true,
+        //     title: "Singleton Single Malt Scotch Whisky 15 Years Old Fruit Decadence 700ml",
+        //     image: "https://images.unsplash.com/photo-1641935955033-9802fb38aff2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        //     price: 120983,
+        //     productDetails: "Singleton 15 Years Old - Fruit Decadence is a premium single malt Scotch whisky that embodies the perfect balance of rich flavors and exquisite craftsmanship",
+        //     quality: true,
 
-            value: function () {
-                return `This is a function`
-            }
-        }
+        //     value: function () {
+        //         return `This is a function`
+        //     }
+        // }
 
         // // const access2 = jumia["title"]
         
@@ -423,6 +423,124 @@
         //     newStudent: true
         // }
 
+        // const value = [20, "Welcome to Flip2Music", true, null, undefined, 
+        //     [10, 5, 17], 
+        //     {name: "Cyril", age: 30}
+        // ]
+
+
+        // value.push("This is a new value")
+
+        // value.unshift("Where are you from?")
+
+        // value.pop()
+
+        // value.shift()
+
+        // const newValue = value.length
+
+        // const newValue = value.slice(0, 2)
+
+        // const newValue = value.indexOf("Welcome to Flip2Music")
+
+        // const newValue = value.fill("How are you?", 5, 7)
+
+        // const firstArray = [10, "Hello", true,]
+        // const secondArray = ["Welcome", "Goodbye"]
+
+        // const newValue = firstArray.concat(secondArray)
+
+        // const array = ["Ben", "Johnson"]
+
+
+        // const newValue = array.join(" ")
+
+        // const newValue = array.includes("Ola")
+
+        // Normal function
+        // function Update () {
+        //     const time = new Date().toLocaleTimeString();
+        //     return time;
+        // } 
+
+        // Arrow function
+        // const Update = () => {
+        //     const time = new Date().toLocaleTimeString();
+        //     return time;
+        // };
+
+
+        // Writing an arrow function in one line
+        // const calculate = (a, b) => a + b;
+
+        // const array = [10, 20, 30, 40, 50]
+
+        // const arr = "Welcome"
+
+        // const result = array.filter((number) => number >= 30)
+
+        const array = [
+            {name: "Cyril", age: 30},
+            {name: "Ade", age: 20},
+            {name: "Tolu", age: 25},
+            {name: "Bola", age: 30},
+            {name: "Sola", age: 40},
+            {name: "Kemi", age: 35},
+            {name: "Titi", age: 30},
+        ]
+
+        // const result = array.every((each) => each === 30)
+        // const result = array.some((each) => each === 30)
+
+        const value = prompt("What is your age?")
+
+        const result = array.filter((item) => item.age === parseInt(value)).map((item) => item.name);
+
+
+        // const result = array.map((value) => value.name)
+
+        // let totalAge = 0;
+
+        // const value = array.forEach(element => {
+        //     totalAge += element.age;
+
+        // });
+
+        // const result = totalAge
+
+        // const result = array.reduce((obi, tinubu) => obi + tinubu.age, 0)
+
+        // const arrayNumber = [110, 20, 130, 45, 5, 120]
+
+        // const arrayString = ["Zebra", "Banana", "Apple", "Cherry", "Date", "Elderberry"]
+        
+        // sorting numbers in ascending order
+        // const result = arrayNumber.sort((a, b) => a - b)
+
+        // sortuing strings in alphabetical order
+        // const result = arrayString.sort((a, b) => a.localeCompare(b))
+
+
+
+
+    // const result = array.map((array) => `My number is ${array.name} and my age is ${array.age}`)
+
+
+
+
+
+
+
+
+        // const result = array.map((result1) => result1.name)
+
+
+
+
+
+        
+ 
+        // const access = update();
 
         // document.getElementById('time').textContent = access; 
-        document.getElementById('time').src = jumia.image; 
+        document.getElementById('time').textContent = result; 
